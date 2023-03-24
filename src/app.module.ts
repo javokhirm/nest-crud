@@ -19,7 +19,6 @@ import { TodosModule } from './todos/todos.module';
         password: configService.get('DB_PASSWORD'),
         database: 'todos',
         entities: [__dirname + '**/**/*.entity.{js,ts}'],
-        migrations: [__dirname + '/../database/migrations/**/*.{js,ts}'],
         synchronize: true,
       }),
     }),
